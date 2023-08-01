@@ -1,0 +1,51 @@
+@import url(/src/index.css);
+
+/* header section */
+header {
+    margin: 4rem auto 1.5rem;
+    text-align: center;
+}
+
+header .profile-details {
+    position: relative;
+}
+
+header #share-btn{
+    width: 42px;
+    height: 41px;
+    position: absolute;
+    top: -8%;
+    right: 18%;
+    /* background: url(../share-button-desktop.svg); */
+    background: url(./share-button-desktop.svg);
+
+}
+
+header button{
+    background-color: inherit;
+    border: none;
+}
+
+header img {
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: var(--dark);
+}
+
+
+@media (max-width: 700px) {
+    header {
+        margin: 2rem 0 0.5rem;
+    }
+
+    header #share-btn{
+        background: url(./share-button-mobile.svg);
+        right: 10px;
+    }
+}
